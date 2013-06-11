@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{Title}{block:SearchPage} ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>
+        <title>supop.fr ~ le site des élèves</title>
 
         <meta charset="utf-8">
         <meta name="description" content="{block:IndexPage}{block:Description}{MetaDescription}{/block:Description}{/block:IndexPage}{block:PermalinkPage}{block:PostSummary}{PostSummary}{/block:PostSummary}{/block:PermalinkPage}" />
@@ -1076,7 +1076,6 @@
         <style type="text/css" media="screen">
             {CustomCSS}
         </style>
-
     </head>
     <body>
         {block:IfShowBarOnTop}<section id="color_bar"></section>{/block:IfShowBarOnTop}
@@ -1108,7 +1107,7 @@
                 {/block:HasPages}
 
                 <ul class="links" style="display:none;{block:AskEnabled} display:block;{/block:AskEnabled}{block:SubmissionsEnabled} display:block;{/block:SubmissionsEnabled}">
-                    {block:AskEnabled}<li><a href="/ask" class="ask"><span class="icon"></span>ask me anything</a></li>{/block:AskEnabled}
+                    {block:AskEnabled}<li><a href="/ask" class="ask"><span class="icon"></span>Contact</a></li>{/block:AskEnabled}
                     {block:SubmissionsEnabled}<li><a href="/submit" class="submit"><span class="icon"></span>submit a post</a></li>{/block:SubmissionsEnabled}
                 </ul>
 
@@ -1404,14 +1403,7 @@
                                     {block:Video}{block:ContentSource} floating{/block:ContentSource}{/block:Video}
                                 {/block:IfPlaceTimestampInLeftColumn}
                             ">
-                                {block:Date} 
-                                <li>
-                                    <ul class="post_controls group">
-                                        <li>{ReblogButton size="21"}</li>
-                                        <li>{LikeButton size="21"}</li>
-                                    </ul>
-                                </li>
-                                {/block:Date} 
+
                                 <li><a href="{Permalink}" class="
                                     timestamp
                                     {block:Text}has_caption{block:Title} with_title{/block:Title}{/block:Text}
