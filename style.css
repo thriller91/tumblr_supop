@@ -2,7 +2,7 @@ body {
   background-color: black;
 }
 p {
-  color: #ffffff;
+  color: #4f4f4f;
 }
 img.bg {
   /* Set rules to fill background */
@@ -28,4 +28,17 @@ img.bg {
 #page-wrap {
   position: relative;
   margin: 0 auto;
+}
+li.post.group,
+aside {
+  background: rgba(256, 256, 256, 0.8);
+  -moz-box-shadow: 0 0 20px black;
+  -webkit-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+}
+#posts .post {
+  padding: 2em;
+}
+#sidebar {
+  padding: 1px;
 }
