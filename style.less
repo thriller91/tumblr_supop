@@ -1,11 +1,32 @@
-@text: #4f4f4f;
+@base03:    #002b36;
+@base02:    #073642;
+@base01:    #586e75;
+@base00:    #657b83;
+@base0:     #839496;
+@base1:     #93a1a1;
+@base2:     #eee8d5;
+@base3:     #fdf6e3;
+@yellow:    #b58900;
+@orange:    #cb4b16;
+@red:       #dc322f;
+@magenta:   #d33682;
+@violet:    #6c71c4;
+@blue:      #268bd2;
+@cyan:      #2aa198;
+@green:     #859900;
+
+@text: @base03;
 
 body {
   background-color: black;
 }
 
-p {
+p, #sidebar {
   color: @text;
+}
+
+#sidebar .links a {
+  color: @green;
 }
 
 img.bg {
@@ -34,11 +55,23 @@ img.bg {
   margin: 0 auto;
 }
 
-li.post.group, aside{
-  background: rgba(256,256,256,0.8);
+li.post.group, aside, h1, .copyright {
+  background: rgba(253, 246, 227, 0.9);
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
   box-shadow: 0 0 20px black;
+}
+
+#blog_info h1 {
+  padding: 0.5em;
+}
+
+#blog_info h1 a {
+  color: @orange;
+}
+
+.caption h2 a {
+  color: @red;
 }
 
 #posts .post {
@@ -47,4 +80,16 @@ li.post.group, aside{
 
 #sidebar {
   padding: 1px;
+}
+
+.post_info .timestamp {
+  color: @base01;
+}
+
+.copyright {
+  padding: 0 2em;
+}
+
+.caption blockquote {
+  border-left: 2px solid @blue;
 }

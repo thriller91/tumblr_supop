@@ -1,8 +1,12 @@
 body {
   background-color: black;
 }
-p {
-  color: #4f4f4f;
+p,
+#sidebar {
+  color: #002b36;
+}
+#sidebar .links a {
+  color: #859900;
 }
 img.bg {
   /* Set rules to fill background */
@@ -30,15 +34,35 @@ img.bg {
   margin: 0 auto;
 }
 li.post.group,
-aside {
-  background: rgba(256, 256, 256, 0.8);
+aside,
+h1,
+.copyright {
+  background: rgba(253, 246, 227, 0.9);
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
   box-shadow: 0 0 20px black;
+}
+#blog_info h1 {
+  padding: 0.5em;
+}
+#blog_info h1 a {
+  color: #cb4b16;
+}
+.caption h2 a {
+  color: #dc322f;
 }
 #posts .post {
   padding: 2em;
 }
 #sidebar {
   padding: 1px;
+}
+.post_info .timestamp {
+  color: #586e75;
+}
+.copyright {
+  padding: 0 2em;
+}
+.caption blockquote {
+  border-left: 2px solid #268bd2;
 }
